@@ -16,6 +16,20 @@ public class UserRegistration {
         System.out.println("Enter last name: ");
         String lastName = scanner.next();
         System.out.println(Pattern.matches("[A-z][a-z]{2}", lastName));
+        
+        
+        
+        //user need to entered valid email adress
+        
+        String email = "abc.xyz@bl.co.in";
+        System.out.println("Email :"+email);
+        System.out.println(Pattern.matches("(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$", email));
 	}
 
 }
+
+
+
+
+
+
