@@ -25,10 +25,37 @@ public class UserRegistration {
         System.out.println("Email :"+email);
         System.out.println(Pattern.matches("(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$", email));
         
-        //UC4 user need to follow predefined mobile format
+        //UC4 user need to follow predefined mobile format,check entered mobile number valid or not
         System.out.println("Enter mobile no. : ");
         String phoneNum = scanner.nextLine();
         System.out.println(Pattern.matches("[6-9]{1}[0-9]{1}[\\s][0-9]{10}", phoneNum));
+        
+        
+         /* UC5 User need to follow pre-defined Password Rules.
+         Rule-1 : Minimum 8 Characters.
+         */
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("[a-zA-Z0-9].{7}$", password));
+        
+        
+        
+        //User need to follow pre-defined Password Rules.
+        // Rule-2 : Should have atLeast 1 Upper Case.
+        
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[A-Z]).{8,}$", password));
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 	}
 
 }
