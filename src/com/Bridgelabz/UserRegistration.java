@@ -54,8 +54,10 @@ public class UserRegistration {
         System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$", password));
         
         
-        
-        
+        //atleast one special master
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=[^@#!$%^&+=]*[@#!$%^&+=][^@#!$%^&+=]*$)(?=.*[0-9]).{8,}$", password));
         
         
 	}
