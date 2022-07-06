@@ -48,8 +48,10 @@ public class UserRegistration {
         System.out.println(Pattern.matches("^(?=.*[A-Z]).{8,}$", password));
         
         
-        
-        
+        //atleat one numeric number in passward
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$", password));
         
         
         
